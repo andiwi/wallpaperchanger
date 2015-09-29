@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www",
+    "debug": "nodemon --debug ./bin/www"
   },
   "description": "A REST api for wallpaperchanger",
   "main": "app.js",
@@ -25,14 +26,14 @@
     "url": "https://github.com/andiwi/wallpaperchanger/issues"
   },
   "homepage": "https://github.com/andiwi/wallpaperchanger#readme",
-
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
+    "moment": "^2.10.6",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  },
+  }
 }

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "debug": "nodemon --debug ./bin/www"
+    "debug": "nodemon --debug ./bin/www",
+    "debug-brk": "nodemon --debug-brk ./bin/www"
   },
   "description": "A REST api for wallpaperchanger",
   "main": "app.js",
@@ -34,6 +35,7 @@
     "jade": "~1.11.0",
     "moment": "^2.10.6",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "winston": "^1.0.2"
   }
 }

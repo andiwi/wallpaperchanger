@@ -1,6 +1,6 @@
 var express = require('express');
 var moment = require('moment');
-var logger = require('./utils/logger');
+var logger = require('../utils/logger');
 
 var router = express.Router();
 

@@ -32,9 +32,9 @@ app.use(morgan('combined', {
 }));
 
 //routes
-app.use('wallpaperchanger/', routes);
-app.use('wallpaperchanger/users', users);
-app.use('wallpaperchanger/wallpapers', wallpapers);
+app.use('/wallpaperchanger/', routes);
+app.use('/wallpaperchanger/users', users);
+app.use('/wallpaperchanger/wallpapers', wallpapers);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

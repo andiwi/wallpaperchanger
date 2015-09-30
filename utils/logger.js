@@ -11,7 +11,7 @@ var logger = new winston.Logger({
     }),
     new (winston.transports.File)({
       level: 'info',
-      filename: './logs/all-logs.log',
+      filename: './logs/application.log',
       handleExceptions: true,
       maxsize: 5242880, //5MB
       maxFiles: 5

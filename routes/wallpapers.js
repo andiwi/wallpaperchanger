@@ -7,10 +7,10 @@ router.get('/:date', function(req, res, next) {
   if ((moment(req.params.date, 'YYYY-MM-DD', true).isValid())) {
 
     var options = {
-      root: __dirname + '../../imgs/'
+      root: __dirname + '/../imgs/'
     }
 
-    var fileName = req.params.date + '.jpg';
+    var fileName = req.params.date + '.JPG';
     res.sendFile(fileName, options, function(err) {
       if (err) {
         console.log(err);

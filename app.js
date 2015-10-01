@@ -68,5 +68,5 @@ if (app.get('env') === 'production') {
     });
   });
 }
-logger.info("NODE_ENV %s", app.get('env'));
+logger.info("NODE_ENV: %s", app.get('env'));
 module.exports = app;

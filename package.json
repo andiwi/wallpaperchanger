@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "debug": "nodemon --debug ./bin/www",
-    "debug-brk": "nodemon --debug-brk ./bin/www"
+    "debug": "set NODE_ENV=development & nodemon --debug ./bin/www",
+    "debug-brk": "set NODE_ENV=development & nodemon --debug-brk ./bin/www"
   },
   "description": "A REST api for wallpaperchanger",
   "main": "app.js",
